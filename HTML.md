@@ -7,6 +7,17 @@ structure a web page and its content.
 The component used to design the
 structure of websites are called HTML tags
 
+Comments in HTML
+This is part of code that should not be parsed.
+<!-- This is an HTML Comment -->
+
+HTML is NOT case sensitive
+
+<html> = <HTML>
+<p> = <P>
+<head> = <HEAD>
+<body> = <BODY 
+
 
 <!-- Basic structure of HTML -->
 
@@ -49,15 +60,5 @@ with content in between
 Some tags have no content in between, eg - <br>
 We can use inspect element/view page source to edit html
 
-Comments in HTML
-This is part of code that should not be parsed.
-<!-- This is an HTML Comment -->
 
-HTML is NOT case sensitive
-<!-- 
-<html> = <HTML>
-<p> = <P>
-<head> = <HEAD>
-<body> = <BODY 
--->
 
