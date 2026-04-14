@@ -30,7 +30,7 @@ Every HTML document follows a standard structure:
 
 1. <!DOCTYPE html>
 Tells the browser that this document is written in HTML5.
-Helps the browser display the page correctly.
+
 
 2. <html>
 Root element of the page.
