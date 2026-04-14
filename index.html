@@ -1,13 +1,116 @@
+<!-- 
+----------------------------
+Webpage Structure Process
+---------------------------- 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Setup -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=H, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Heading Tag
-    Used to display headings in HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO Meta Data -->
+    <meta name="description" content="Basic HTML webpage structure with header, main content, and footer layout">
+    <meta name="keywords" content="HTML, CSS, Web Development, Layout">
+    <meta name="author" content="Amaresh">
+
+    <!-- Title -->
+    <title>My Webpage</title>
+
+    <!-- Internal CSS (for layout understanding), this is styling part of HTML-->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+            padding: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my first structured webpage</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Main Section -->
+        <section>
+            <h2>Main Content</h2>
+            <p>This is the main area of the webpage where your content goes.</p>
+
+            <article>
+                <h3>Article Title</h3>
+                <p>This is an example of an article inside the section.</p>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Extra information, links, or ads can go here.</p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website | All rights reserved</p>
+    </footer>
+
 </body>
 </html>
