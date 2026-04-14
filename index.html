@@ -5,62 +5,81 @@ Webpage Structure Process
 -->
 
 <!DOCTYPE html>
+<!-- Declares this document as HTML5 -->
+
 <html lang="en">
+<!-- Root element of the webpage -->
+<!-- lang="en" tells the browser the page language is English -->
+
 <head>
-    <!-- Basic Meta Setup -->
+    <!-- Head section contains meta info (not visible on webpage) -->
+
+    <!-- Character encoding (supports all characters like symbols, emojis) -->
     <meta charset="UTF-8">
+
+    <!-- Makes website responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Data -->
+    <!-- SEO Meta Data (used by search engines) -->
     <meta name="description" content="Basic HTML webpage structure with header, main content, and footer layout">
     <meta name="keywords" content="HTML, CSS, Web Development, Layout">
     <meta name="author" content="Amaresh">
 
-    <!-- Title -->
+    <!-- Title shown on browser tab -->
     <title>My Webpage</title>
 
-    <!-- Internal CSS (for layout understanding), this is styling part of HTML-->
+    <!-- Internal CSS (used for styling the webpage) -->
+    <!-- Normally CSS is written in a separate file, but here it's for learning -->
     <style>
+
+        /* Applies to full page */
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+            margin: 0; /* Removes default spacing */
+            font-family: Arial, sans-serif; /* Sets font style */
         }
 
+        /* Header styling */
         header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
+            background: #333; /* Dark background */
+            color: white; /* Text color */
+            padding: 15px; /* Space inside header */
+            text-align: center; /* Center align text */
         }
 
+        /* Navigation bar styling */
         nav {
             background: #555;
             padding: 10px;
             text-align: center;
         }
 
+        /* Navigation links */
         nav a {
             color: white;
-            margin: 0 10px;
-            text-decoration: none;
+            margin: 0 10px; /* Space between links */
+            text-decoration: none; /* Remove underline */
         }
 
+        /* Main layout (flexbox used) */
         main {
-            display: flex;
+            display: flex; /* Makes items side by side */
             padding: 20px;
         }
 
+        /* Main content area */
         section {
-            flex: 3;
+            flex: 3; /* Takes more space */
             padding: 10px;
         }
 
+        /* Sidebar area */
         aside {
-            flex: 1;
+            flex: 1; /* Takes less space */
             background: #f4f4f4;
             padding: 10px;
         }
 
+        /* Footer styling */
         footer {
             background: #333;
             color: white;
@@ -71,35 +90,39 @@ Webpage Structure Process
 </head>
 
 <body>
+<!-- Body contains all visible content -->
 
-    <!-- Header -->
+    <!-- Header section (top part of website) -->
     <header>
         <h1>My Website</h1>
         <p>Welcome to my first structured webpage</p>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation menu (links to different pages) -->
     <nav>
-        <a href="#">Home</a>
+        <a href="#">Home</a> <!-- # means no link yet -->
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main content area -->
     <main>
 
-        <!-- Main Section -->
+        <!-- Section = main content block -->
+        <!-- Used to group related content -->
         <section>
             <h2>Main Content</h2>
             <p>This is the main area of the webpage where your content goes.</p>
 
+            <!-- Article = independent content (like blog, post) -->
             <article>
                 <h3>Article Title</h3>
                 <p>This is an example of an article inside the section.</p>
             </article>
         </section>
 
-        <!-- Sidebar -->
+        <!-- Aside = sidebar content -->
+        <!-- Used for extra info like ads, links, suggestions -->
         <aside>
             <h3>Sidebar</h3>
             <p>Extra information, links, or ads can go here.</p>
@@ -107,7 +130,7 @@ Webpage Structure Process
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer section (bottom of website) -->
     <footer>
         <p>&copy; 2026 My Website | All rights reserved</p>
     </footer>
