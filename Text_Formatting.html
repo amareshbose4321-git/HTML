@@ -1,0 +1,101 @@
+<!-- 
+----------------------------------
+Text Formatting in HTML
+----------------------------------
+This file shows:
+- Headings tag 
+- Paragraphs tag
+- Bold & Strong Bold/ Italic tag 
+- Emphasize tag
+- Underline tag
+- Insert and Delete tag
+- Small & big text tag
+- Mark (highlight) tag
+- Deleted & Inserted text tag
+- Subscript & Superscript text tag
+- br and hr tag
+- pre tag
+- div tag
+- span tag
+----------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Formatting Example</title>
+</head>
+<body>
+
+    <!-- Headings -->
+    <h1>This is Heading 1</h1>
+    <h2>This is Heading 2</h2>
+    <h3>This is Heading 3</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6</h6>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph. HTML paragraphs are used to display blocks of text.</p>
+
+    <!-- Bold Text -->
+    <p>This is <b>bold text</b> using b tag.</p>
+    <p>This is <strong>important bold text</strong> using strong tag.</p>
+
+    <!-- Italic Text -->
+    <p>This is <i>italic text</i> using i tag.</p>
+    <p>This is <em>emphasized text</em> using em tag.</p>
+
+    <!-- Underline -->
+    <p>This is <u>underlined text</u>.</p>
+
+    <!-- Small Text -->
+    <p>This is <small>small text</small>.</p>
+
+    <!-- Highlight -->
+    <p>This is <mark>highlighted text</mark>.</p>
+
+    <!-- Deleted & Inserted -->
+    <p>This is <del>deleted text</del> and <ins>inserted text</ins>.</p>
+
+    <!-- Subscript & Superscript -->
+    <p>H<sub>2</sub>O (Subscript example)</p>
+    <p>10<sup>2</sup> = 100 (Superscript example)</p>
+    
+       <!-- Line Break -->
+    <p>This is line one.<br>This is line two after break.</p>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- Big Text (Not recommended in modern HTML) -->
+    <p>This is <big>bigger text</big>.</p>
+
+    <!-- Preformatted Text  displayed exactly as you write it in the HTML code — including: space, line break, tabs -->
+    <pre>
+This is preformatted text.
+Spaces(      )and line breaks
+are preserved exactly.
+    </pre>
+
+    <!-- Div (Block Element) -->
+    <div style="background-color: lightgray; padding: 10px;">
+        <h3>This is inside a div</h3>
+        <p>Div is used to group block elements.</p>
+    </div>
+
+    <!-- Span (Inline Element) -->
+    <p>This is a <span style="color: red;">red colored text</span> using span.</p>
+
+<!-- 
+| Feature    | `<div>`               | `<span>`           |
+| ---------- | --------------------- | ------------------ |
+| Type       | Block element         | Inline element     |
+| Width      | Full width            | Only content width |
+| Line break | Starts new line       | Same line          |
+| Usage      | Large sections/layout | Small text styling | 
+-->
+
+</body>
+</html>
