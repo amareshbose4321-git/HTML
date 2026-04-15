@@ -1,0 +1,133 @@
+<!-- 
+----------------------------------
+Links & Images in HTML
+----------------------------------
+This file includes:
+- Anchor tags (links)
+- Internal & External links
+- Image tag
+- Clickable images
+- Navigation menu
+----------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links & Images Example</title>
+</head>
+<body>
+
+    <!-- ========================= -->
+    <!-- Anchor Tags (Links) -->
+    <!-- ========================= -->
+
+    <!--
+     🔹 <a> (Anchor Tag)
+    Used to create links
+    href → destination
+    target="_blank" → open in new tab 
+    -->
+    <!-- 
+    🔹 Types of Links:
+    🌐 External → https://google.com
+    📍 Internal → #section
+    📧 Email → mailto:
+    📞 Phone → tel: 
+    -->
+
+    <h2>🔗 Anchor Tag Examples</h2>
+
+    <!-- External Link -->
+    <p>
+        Visit 
+        <a href="https://www.google.com" target="_blank">
+            Google
+        </a>
+    </p>
+
+    <!-- Internal Link -->
+    <p>
+        Go to <a href="index.html">Section 1</a>
+    </p>
+
+    <!-- Email Link -->
+    <p>
+        Contact us: 
+        <a href="mailto:example@gmail.com">Send Email</a>
+    </p>
+
+    <!-- Phone Link -->
+    <p>
+        Call us: 
+        <a href="tel:1234567890">1234567890</a>
+    </p>
+
+    <!-- ========================= -->
+    <!-- Images -->
+    <!-- ========================= -->
+
+    <!-- 🔹 <img> Tag
+    Used to show images
+    src → image URL
+    alt → description (important for SEO)
+    🔹 Clickable Image
+
+    👉 Wrap <img> inside <a> -->
+
+    <h2>🖼️ Image Examples</h2>
+
+    <!-- Basic Image -->
+    <img src="https://www.goal.com/story/messi-ronaldo-children-of-football/media/screen_shot_2017-06-21_at_12.26.45.png" alt="Sample Image" width="500"
+         height="250">>
+    
+    <br><br>
+
+    <!-- Image with Width & Height -->
+    <img src="https://www.goal.com/story/messi-ronaldo-children-of-football/media/screen_shot_2017-06-21_at_12.26.45.png"
+         alt="Resized Image"
+         width="200"
+         height="100">
+
+    <br><br>
+
+    <!-- Clickable Image -->
+    <a href="https://www.youtube.com/ " target="_blank">
+        <img src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2021/06/youtube_hero_1200x675.jpg" alt="Click Me" width="200">
+    </a>
+
+    <!-- ========================= -->
+    <!-- Navigation Menu -->
+    <!-- ========================= -->
+
+<!--  🔹 <nav> Tag
+    Used for navigation menus
+    Contains multiple links -->
+
+    <h2>📌 Navigation Menu</h2>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#section1">About</a> |
+        <a href="#section2">Services</a> |
+        <a href="#section3">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- Sections for Navigation -->
+    <!-- ========================= -->
+
+    <h3 id="section1">About Section</h3>
+    <p>This is the about section.</p>
+
+    <h3 id="section2">Services Section</h3>
+    <p>This is the services section.</p>
+
+    <h3 id="section3">Contact Section</h3>
+    <p>This is the contact section.</p>
+
+</body>
+</html>
