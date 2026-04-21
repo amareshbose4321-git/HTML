@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media in HTML</title>
+</head>
+
+<body>
+
+    <h1>Media Elements in HTML</h1>
+
+    <!-- 🎵 AUDIO -->
+    <h2>Audio Example</h2>
+    <!-- Syntax-1 : Only one audio is add and it is less flexible but short and easy -->
+    <audio src="Audio.mp3"></audio>
+
+    <!-- Syntax-2 : more audios are add and it is more flexible but it is little bit long -->
+    <audio controls>
+        <source src="Audio_1.mp3" type="audio/mpeg">
+        <source src="Audio.mp3" type="audio/mpeg">
+        <source src="Audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 
+    Attributes for <audio> Tag
+    src: Specifies the path to the audio file.
+    controls: Adds audio controls, like play, pause, and volume.
+    autoplay: Automatically starts playing the audio when the page loads.
+    loop: Repeats the audio once it ends.
+    muted: Mutes the audio by default.
+    preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata','none'). 
+    🔹 1. preload="auto"
+    Load the whole audio in advance
+    Browser may download full audio, Playback starts instantly, Uses more data.
+    ✔ Good for: short audio, fast experience
+    ❌ Not good for: large files (wastes data)
+    
+    🔹 2. preload="metadata"
+    Load only basic info
+    Loads: duration, size. Does NOT load full audio.
+    ✔ Balanced option 
+    ✔ Most commonly used
+
+    🔹 3. preload="none"
+    Don’t load anything
+    Audio loads only when user clicks play and Saves data also.
+    ✔ Best for: large files, slow internet
+    ❌ Small delay when playing
+    -->
+
+    <br><br>
+
+    <!-- 🎬 VIDEO -->
+    <h2>Video Example</h2>
+    <!-- Syntax-1 : Only one video is add and it is less flexible but short and easy -->
+    <video src="Video_1.mp4" width="200" controls></video>
+
+    <!-- Syntax-2 : more videos are add and it is more flexible but it is little bit long -->
+    <video width="200" poster="pic.jpg" controls>
+        <source src="Video_2.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+    </video>
+
+    <!-- 
+    Attributes for <video> Tag
+    src: Specifies the path to the video file.
+    controls: Adds video controls, like play, pause, and volume.
+    autoplay: Automatically starts playing the video when the page loads.
+    loop: Repeats the video once it ends.
+    muted: Mutes the video by default.
+    poster: Specifies an image to be displayed before the   video starts playing.
+    width and height: Specifies the dimensions of the video.    
+    -->
+
+    <!-- 
+    in Syntax-1 Only one video and audio is add and it is less flexible but short and easy.
+
+    in Syntax-2 more videos and audios are add and it is more flexible but it is little bit long. 
+    -->
+
+    <br><br>
+
+    <!-- 
+    iFrame (Inline Frame):
+    Used to embed content from another website inside your webpage.
+
+    You can embed:
+    - Google Maps 🗺️
+    - YouTube videos 🎬
+    - Other websites 🌐
+
+    It works using a link (URL).
+    -->
+
+    <!-- 🌐 EMBED (YouTube Video) -->
+    <h2>Syntax</h2>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+
+    <h2>Embedded YouTube Video</h2>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/Yg8bRp0bRII?si=UhnUCWUkFPm0LhTX"
+        title="YouTube video" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <!-- 🖼️ EMBED WEBSITE -->
+    <h2>Embedded Website</h2>
+    <iframe src="https://www.wikipedia.org/" width="400" height="250"></iframe>
+
+    <!-- 👉 Many modern websites (including Microsoft sites) block embedding for security reasons.
+
+    They use:
+
+    X-Frame-Options: DENY
+    or Content-Security-Policy
+
+    👉 This means:
+
+    “This website cannot be shown inside an iframe.”
+
+    🔍 What you’ll see
+    Blank area ⚪
+    Or error page 🚫
+    Or browser console error like:
+
+    Refused to display in a frame -->
+
+</body> 
+
+</html>
