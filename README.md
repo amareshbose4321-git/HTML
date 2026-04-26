@@ -15,6 +15,7 @@ clarity, structure, and real-world practice, making it ideal for beginners.
 HTML.md → Basic HTML structure and how it works  
 index.html → Complete webpage structure (head, body, layout)  
 Text_Formatting.html → Headings, paragraphs, bold, italic, etc.  
+Inline & Block_Element.html → Tells about inline and block elements with example
 Links_Images.html → Anchor tags, images, and navigation  
 Media.html → Audio, video, and embedding content  
 Lists.html → Ordered, unordered, and description lists  
@@ -38,4 +39,4 @@ Forms.html → Input fields, labels, buttons, form structure
 A beginner-friendly collection of HTML examples focused on building strong fundamentals  
 through clean structure and practical implementation.
 
-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------th -----------------
