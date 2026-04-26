@@ -131,6 +131,84 @@
 
     Refused to display in a frame -->
 
-</body> 
+    <h2>SVG (Scalable Vector Graphics)</h2>
+    <!-- 
+    ---------
+    SVG 
+    ---------
+    SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality. 
+    -->
+
+    <!-- 
+    Why Use SVG?
+    Scalability
+    SVG images can be scaled indefinitely without losing quality, which is ideal for responsive web design.
+
+    File Size
+    SVG files are often smaller than their raster counterparts, especially for simple shapes and icons.
+
+    Flexibility
+    SVGs can be styled, animated, and manipulated using CSS and JavaScript. 
+    -->
+
+    <!-- 
+    How to Embed SVG in HTML
+    SVG can be embedded in HTML in several ways:
+
+    Inline SVG: Directly writing the SVG XML code within HTML.-->
+    <!-- EX:  -->
+    <div>
+        <svg height="300" width="300" style="border:2px solid black">
+            <circle cx="150" cy="150" r="120" fill="yellow" stroke="green" stroke-width="5">
+            </circle>
+        </svg>
+
+        <svg height="300" width="300" style="border:2px solid black">
+            <rect rx="20" x="50" y="50" height="200" width="200" fill="red" stroke="blue" stroke-width="5"></rect>
+        </svg>
+    </div>
+
+    <!--Using an <img> tag: Point the src attribute to an SVG file.
+    EX:
+    <img src="image.svg" alt="Sample SVG"> 
+    -->
+
+    <!--Using CSS: Setting SVG as a background image in a CSS file. 
+    EX:
+    .background {
+    background-image: url('image.svg');
+    }
+    -->
+
+    <!-- 
+    🎨 SVG Attributes (Simple Explanation)
+
+    In short:
+    👉 No attributes = no visible shape
+
+    📌 1. Position Attributes
+    These decide where the shape appears
+
+    x, y → starting position (used in rectangle, text, etc.)
+    cx, cy → center position (used in circle)
+    x1, y1, x2, y2 → line coordinates
+
+    📌 2. Size Attributes
+    These control how big the shape is
+
+    width, height → size of SVG or rectangle
+    r → radius (circle)
+    rx, ry → rounded corners / ellipse radius
+
+    📌 3. Color & Style Attributes
+    These control appearance
+
+    fill → inside color
+    stroke → border color
+    stroke-width → border thickness
+    opacity → transparency (0 to 1) 
+    -->
+
+</body>
 
 </html>

@@ -12,15 +12,15 @@ clarity, structure, and real-world practice, making it ideal for beginners.
 
 🎯 What This Repository Covers
 
-HTML.md → Basic HTML structure and how it works  
-index.html → Complete webpage structure (head, body, layout)  
+HTML.md → Basic HTML structure and how it works.
+index.html → Complete webpage structure (head, body, layout).  
 Text_Formatting.html → Headings, paragraphs, bold, italic, etc.  
-Inline & Block_Element.html → Tells about inline and block elements with example
-Links_Images.html → Anchor tags, images, and navigation  
-Media.html → Audio, video, and embedding content  
-Lists.html → Ordered, unordered, and description lists  
-Tables.html → Table creation, rows, columns, styling basics  
-Forms.html → Input fields, labels, buttons, form structure  
+Inline & Block_Element.html → Tells about inline and block elements with example.
+Links_Images.html → Anchor tags, images, and navigation.  
+Media.html → Audio, video, iframe(embedding) and SVG content. 
+Lists.html → Ordered, unordered, and description lists.  
+Tables.html → Table creation, rows, columns, styling basics.  
+Forms.html → Input fields, labels, buttons, form structure.  
 
 ------------------------------------------------------------------------------------------
 
