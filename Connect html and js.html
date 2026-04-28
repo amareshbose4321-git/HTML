@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- You can connect HTML and JavaScript in 3 main ways. -->
+
+    <!-- 🔗 1. External JavaScript (Best Method ✅)
+👉 JS is written in a separate file and linked to HTML -->
+
+    <!-- This is a heading with an id "title" -->
+    <!-- The id can be used in JavaScript or CSS to target this element -->
+    <h1 id="title1">Hello</h1>
+
+    <!-- Button element -->
+    <!-- When clicked, it calls the JavaScript function "changeText()" -->
+    <button onclick="changeText1()">Click1</button>
+
+    <!-- This line connects an external JavaScript file -->
+    <!-- "script.js" must be in the same folder as this HTML file -->
+    <!-- The JS file will contain the function "changeText()" -->
+    <script src="Connect html and js.js"></script>
+
+    <!-- ⚡ 2. Internal JavaScript (Inside HTML)
+👉 JS is written inside <script> tag in same HTML file -->
+
+    <h2 id="title2">Hello</h2>
+    <button onclick="changeText2()">Click2</button>
+
+    <script>
+        function changeText2() {
+            document.getElementById("title2").innerText = "Changed using Internal JS";
+        }
+    </script>
+
+    <!-- ⚡ 3. Inline JavaScript (Direct in HTML)
+    JS is written directly inside HTML element -->
+
+    <h2 id="title3">Hello</h2>
+
+    <button onclick="document.getElementById('title3').innerText='Changed Inline'">
+        Click
+    </button>
+
+    <!-- ⚠️ Important Tips
+    Always place
+    <script> inside </body > r
+
+    File path must be correct:
+
+        <script src="js/script.js"></script>
+    JavaScript is case-sensitive -->
+
+</body>
+
+</html>
