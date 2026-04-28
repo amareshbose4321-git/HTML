@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Connect html and css.css">
+
+    <!-- <
+     link> → used to connect external resources (like CSS)
+    rel="stylesheet" → tells the browser this file is CSS styling
+    href="css/style.css" → path to the CSS file
+    👉 css/style.css means:
+    Go to css folder
+    Then open style.css file 
+    -->
+
+    <style>
+        h2 {
+            color: blue;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Linking CSS to HTML is simple—there are 3 main ways, but one is the standard you should use most. -->
+
+    <!-- 🔗 1. External CSS (Best Method ✅)
+    👉 You create a separate .css file and link it in HTML through this syntax.
+    <link rel="stylesheet" href="style.css"> -->
+
+    <!-- ⚠️ Important Tips
+    Make sure your CSS file is in the same folder or give correct path:
+
+    <link rel="stylesheet" href="css/style.css">
+    Always put
+    <link> inside <head> -->
+
+    <h1>HELLOW WORLD!!!</h1>
+
+    <!-- 
+    🎨 2. Internal CSS (Inside HTML)
+    👉 CSS is written inside <style> tag -->
+
+    <h2>HELLOW WORLD!!!</h2>
+
+    <!-- 
+    ⚡ 3. Inline CSS (Direct on element)
+    👉 CSS is written inside the HTML tag -->
+
+    <h3 style="color: rgb(185, 82, 173);background-color: yellow;">Hello World</h3>
+
+    
+    
+</body>
+</html>

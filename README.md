@@ -16,11 +16,14 @@ HTML.md → Basic HTML structure and how it works.
 index.html → Complete webpage structure (head, body, layout).  
 Text_Formatting.html → Headings, paragraphs, bold, italic, etc.  
 Inline & Block_Element.html → Tells about inline and block elements with example.
-Links_Images.html → Anchor tags, images, and navigation.  
-Media.html → Audio, video, iframe(embedding) and SVG content. 
 Lists.html → Ordered, unordered, and description lists.  
 Tables.html → Table creation, rows, columns, styling basics.  
-Forms.html → Input fields, labels, buttons, form structure.  
+Forms.html → Input fields, labels, buttons, form structure. 
+Connect html and css.html → How many ways Link css file to html.
+Connect html and js.html → How many ways Link js file to html.
+ID and Class.html → What is id and class & how to use it.
+Links_Images.html → Anchor tags, images, and navigation.  
+Media.html → Audio, video, iframe(embedding) and SVG content. 
 
 ------------------------------------------------------------------------------------------
 
