@@ -5,13 +5,6 @@
 ## 📌 What is HTML?
 HTML (**HyperText Markup Language**) is the standard language used to create web pages. It structures content on the internet using elements like headings, paragraphs, images, links, etc.
 
-HTML → Structure of a webpage (like skeleton)
-CSS → Styling of a webpage (colors, layout, design)
-JavaScript (JS) → Behavior of a webpage (actions, interactivity and functionalities)
-
-HTML → ❌ Not case sensitive
-CSS → CSS itself (like color, margin) is not case sensitive but class names and id names are case sensitive
-JavaScript (JS) → ✅ Fully case sensitive
 ---
 
 ## 🧱 Basic Structure of HTML
@@ -115,6 +108,13 @@ CSS is used for design 🎨
 JavaScript is used for functionality ⚙️
 HTML is the foundation of every website
 
+HTML → Structure of a webpage (like skeleton)
+CSS → Styling of a webpage (colors, layout, design)
+JavaScript (JS) → Behavior of a webpage (actions, interactivity and functionalities)
+
+HTML → ❌ Not case sensitive
+CSS → CSS itself (like color, margin) is not case sensitive but class names and id names are case sensitive
+JavaScript (JS) → ✅ Fully case sensitive
 
 🚀 Conclusion
 
