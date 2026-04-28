@@ -108,6 +108,11 @@ CSS is used for design 🎨
 JavaScript is used for functionality ⚙️
 HTML is the foundation of every website
 
+
+🚀 Conclusion
+
+HTML is simple but powerful. Once you understand its structure, you can build any webpage by combining elements properly.
+
 HTML → Structure of a webpage (like skeleton)
 CSS → Styling of a webpage (colors, layout, design)
 JavaScript (JS) → Behavior of a webpage (actions, interactivity and functionalities)
@@ -115,7 +120,3 @@ JavaScript (JS) → Behavior of a webpage (actions, interactivity and functional
 HTML → ❌ Not case sensitive
 CSS → CSS itself (like color, margin) is not case sensitive but class names and id names are case sensitive
 JavaScript (JS) → ✅ Fully case sensitive
-
-🚀 Conclusion
-
-HTML is simple but powerful. Once you understand its structure, you can build any webpage by combining elements properly.
