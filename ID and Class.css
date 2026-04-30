@@ -1,3 +1,20 @@
-#title{
+/* Using IDs and Classes in CSS
+In CSS, elements with IDs are selected using a hash (#) symbol before the ID, and elements with classes are selected using a dot (.) before the class name. */
+
+/* This is an ID selector */
+#title {
+    /* Changes the text color to red */
     color: red;
+}
+
+/* This is a class selector */
+.text {
+    /* Sets the background color to aquamarine */
+    background-color: aquamarine;
+}
+
+ /* Using BOTH id and class in same element  */
+#special.write{
+    color: yellow;
+    background-color: blueviolet;
 }

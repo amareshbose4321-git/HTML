@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    
+    <!-- Our day-to-day lives often involve the use of lists. For example, when we go shopping, the bill we receive includes a list of all the items we've purchased. In a similar manner, web developers use lists to neatly display data on websites. -->
+
+    <!-- Types of HTML Lists
+
+    HTML provides different types of lists to display data in various forms. Each list contains one or more list items.
+
+    Unordered List: Displays items using bullets.
+    Ordered List: Displays items in a numerical sequence, and supports various numbering styles like Arabic numerals, Roman numerals, and so on.
+    Definition List: Organizes items in a format similar to a dictionary, with terms and their corresponding definitions. -->
+
+    <!-- An Unordered List
+    An unordered list uses bullets to display items. It is suitable for listing items   where the order doesn't matter. We will soon explore unordered lists in great detail. -->
+    
+    <!-- 🔹 Tags used:
+    1. <ul> (Unordered List)
+    Creates a bulleted list (●, ○, etc.).
+    2. <li> (List Item)
+    Represents each item inside a list (used inside both <ol> and <ul>). -->
+
+    <!-- Ex: -->
+     <h1>An Unordered List</h1>
+     <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+     </ul>
+
+    <hr>
+
+     <!-- An Ordered List
+    An ordered list uses numbers or other types of markers to indicate the sequence of items. It's ideal for listing steps in a process or ranking items in order of    importance. We will soon explore ordered lists in great detail. -->
+    
+    <!-- 🔹 Tags used:
+    1. <ol> (Ordered List)
+    Creates a numbered list (1, 2, 3…).
+    2. <li> (List Item)
+    Represents each item inside a list (used inside both <ol> and <ul>). -->
+
+    <!-- 
+    In an ordered list (<ol>), you use the type attribute.
+    🔹 Types you can use:
+    type="1" → 1, 2, 3 (default)
+    type="A" → A, B, C
+    type="a" → a, b, c
+    type="I" → I, II, III (Roman uppercase)
+    type="i" → i, ii, iii (Roman lowercase) 
+    -->
+
+    <!-- Ex: -->
+     <h1>An Ordered List</h1>
+     <ol>
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Rubber</li>
+     </ol>
+     
+     <ol type="i">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Rubber</li>
+     </ol>
+
+    <ol type="A">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Rubber</li>
+     </ol>
+
+    <hr>
+
+     <!-- A Definition List
+    A definition list arranges items in a way similar to a dictionary, with a term  followed by its definition. This is useful for glossaries or to display metadata. -->
+    <!-- 🔹 Tags used:
+    1. <dl> (Definition List)
+    It is the container for the whole list.
+    2. <dt> (Definition Term)
+    It represents the term or title (the word you want to define).
+    3. <dd> (Definition Description)
+    It represents the meaning or explanation of the term. -->
+
+    <!-- Ex: -->
+    <h1>HTML Definition List</h1>
+
+     <dl>
+       <dt>HTML</dt>
+       <dd>HyperText Markup Language: The standard language for creating web pages.</dd>
+
+       <dt>CSS</dt>
+       <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+
+       <dt>JavaScript</dt>
+       <dd>A programming language commonly used in web development to add interactive features.</dd>
+     </dl>
+
+</body>
+</html>
