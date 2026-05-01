@@ -1,11 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables</title>
 </head>
+
 <body>
+    <!--
+    HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the <table> tag to start and end a table.
+
+        Syntax of HTML Table
+        <table>
+            // table content
+        </table> 
+        -->
+
+    <!-- 
+    Key Elements of HTML Table
+    <table>: Defines the table itself.
+    <tr>: Used for table rows.
+    <th>: Used for table headings.
+    <td>: Used for table cells (data).
+     -->
+
+    <!-- Ex: -->
+    <h1>Table</h1>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Amaresh</td>
+            <td>23</td>
+            <td>92</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 
+    Rowspan and Colspan Attributes
+    Rowspan: If you want a table cell to span multiple rows, you can use the rowspan attribute.
+
+    syntax:
+    <td rowspan="value">
+
+    Colspan: If you want a table cell to span multiple columns, you can use the colspan attribute.
+
+    syntax:
+    <td colspan="value"> 
+    -->
+
+    <h2>Visual Representation of Rowspan and Colspan</h2>
+    <img src="Rowsspan & Colspan pic.png" alt="Rowspan and Colspan image">
+    <hr>
+
+    <!-- Rowspan Example: -->
+    <table border="2">
+        <tr>
+            <th colspan="2"> Rowspan </th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td rowspan="2">Merged Rows</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Colsspan Example: -->
+    <table border="2">
+        <tr>
+            <th colspan="2"> Colspan </th>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">Merged Colums</td>
+            <!-- style="text-align: center"-> moves the text to the middle (left ↔ right) inside that wide cell  -->
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+    </table>
+
+
+    <!-- Adding a Caption
+    To add a title to your table, you can use the <caption> element. This element helps both in terms of SEO and accessibility.
+
+    In HTML, <caption> is used to give a title to your table.
+
+        syntax:
+        <table>
+            <caption>Student Details</caption>
+             Rest of the table here 
+        </table> 
+        -->
+
+    <!-- Table Headers, body and Footers
+    Besides <th> for individual header cells, HTML tables allow you to group header,body or footer content using <thead>, <tbody> and <tfoot>.
+
+            <table>
+                <thead>
+                     header content 
+                </thead>
+                <tbody>
+                     body content 
+                </tbody>
+                <tfoot>
+                     footer content 
+                </tfoot>
+            </table> 
+            -->
+
+    <!-- Ex: -->
+    <table border="1">
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>PF</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Naruto</td>
+                <td>Developer</td>
+                <td>50000</td>
+                <td rowspan="3">3000</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Tanjiro</td>
+                <td>Designer</td>
+                <td>45000</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Goku</td>
+                <td>Manager</td>
+                <td>60000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Employee Salary</td>
+                <td colspan="2" style="text-align: center;">158000</td>
+            </tr>
+    </table>
+
+    <!-- 
+        Column Groups
+        You can use the <colgroup> and
+        <col> elements to apply styles to an entire column in an HTML table.
+
+        🔹 <colgroup>
+        It is a container for one or more <col> elements
+        It defines a group of columns in a table
+        🔹 <col>
+        It represents a single column
+        Used to apply styles like width, background color, visibility, etc.
+
+        <colgroup> = group of columns
+        <col> = individual column styling tool
+
+        syntax:
+            <table>
+                <colgroup>
+                    <col style="background-color:yellow">
+                </colgroup>
+                    rest of the table
+            </table> 
+            -->
+
+    <hr>
     
+    <!-- Ex: -->
+    <table border="1">
+        <colgroup>
+            <!-- 
+            width → controls column size
+            visibility → show / hide column 
+            -->
+            <col style="background-color: aqua; width: 150px;">
+            <col style="visibility: collapse;">
+            <!-- 
+            The span attribute tells how many columns the <colgroup> should apply to 
+            -->
+            <col span="2" style="background-color: bisque;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Roll No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center;">
+                <td>Deku</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>12404</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Hinata</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>10264</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Sasuke</td>
+                <td>24</td>
+                <td>Male</td>
+                <td>29024</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <!-- 
+        🔹 Important Points
+        <colgroup> must be placed inside <table> and before <tr>
+
+        <col> does not have closing tag
+        -->
+
+        <!-- 
+    ⚠️ Important clarification
+
+        <col> is limited — it does NOT work for all CSS properties.
+
+        ✔️ Works well:
+        background-color
+        width
+        visibility
+
+        ❌ Does NOT work:
+        padding
+        margin
+        text-align
+        border (in most cases) 
+        -->
+    </table>
+
+    <hr>
+<!-- 
+    Scope Attribute:
+    To make your tables more accessible, you can use the scope attribute in <th> elements to specify if they are headers for columns, rows, or groups of columns or rows. 
+-->
+<table border="1">
+
+  <!-- Column Group -->
+  <colgroup span="2" style="background-color: lightyellow;"></colgroup>
+
+  <!-- Column Headers -->
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Marks</th>
+  </tr>
+
+  <!-- Row Group -->
+  <tbody>
+    <tr>
+      <th scope="row">Amaresh</th>
+      <td>85</td>
+    </tr>
+    <tr>
+      <th scope="row">Rahul</th>
+      <td>90</td>
+    </tr>
+  </tbody>
+
+  <!-- Another Row Group -->
+  <tbody>
+    <tr>
+      <th scope="rowgroup" colspan="2">Topper Group</th>
+    </tr>
+    <tr>
+      <th scope="row">Sohan</th>
+      <td>95</td>
+    </tr>
+  </tbody>
+
+  <!-- Column Group Header -->
+   <tfoot>
+  <tr>
+    <th scope="colgroup" colspan="2">Summary</th>
+  </tr>
+    </tfoot>
+</table>
+
+<!--
+For simple understanding: 
+col → full vertical column
+row → full horizontal row
+scope → defines which cells a <th> (header) applies to
+span → how many columns?
+colgroup → multiple columns
+rowgroup → multiple rows 
+-->
+
 </body>
+
 </html>
